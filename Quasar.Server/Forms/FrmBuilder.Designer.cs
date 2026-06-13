@@ -307,7 +307,7 @@ namespace Quasar.Server.Forms
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(11, 94);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(319, 39);
+            this.label9.Size = new System.Drawing.Size(319, 26);
             this.label9.TabIndex = 5;
             this.label9.Text = "一个独特的互斥锁确保客户端在同一系统上只运行一个\r\n实例。（就是区分远程程序，防止用户重复执行）";
             // 
@@ -325,7 +325,7 @@ namespace Quasar.Server.Forms
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 78);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 13);
+            this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "进程互斥";
             // 
@@ -342,7 +342,7 @@ namespace Quasar.Server.Forms
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(17, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(231, 13);
+            this.label7.Size = new System.Drawing.Size(241, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "你可以选择一个标签来标识你的客户端。";
             // 
@@ -351,7 +351,7 @@ namespace Quasar.Server.Forms
             this.lblTag.AutoSize = true;
             this.lblTag.Location = new System.Drawing.Point(17, 43);
             this.lblTag.Name = "lblTag";
-            this.lblTag.Size = new System.Drawing.Size(61, 13);
+            this.lblTag.Size = new System.Drawing.Size(75, 13);
             this.lblTag.TabIndex = 2;
             this.lblTag.Text = "客户端标签:";
             // 
@@ -388,7 +388,7 @@ namespace Quasar.Server.Forms
             this.lblMutex.AutoSize = true;
             this.lblMutex.Location = new System.Drawing.Point(17, 142);
             this.lblMutex.Name = "lblMutex";
-            this.lblMutex.Size = new System.Drawing.Size(42, 13);
+            this.lblMutex.Size = new System.Drawing.Size(49, 13);
             this.lblMutex.TabIndex = 6;
             this.lblMutex.Text = "互斥锁:";
             // 
@@ -397,7 +397,7 @@ namespace Quasar.Server.Forms
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 5);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 13);
+            this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "客户端识别";
             // 
@@ -478,7 +478,7 @@ namespace Quasar.Server.Forms
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 13);
+            this.label4.Size = new System.Drawing.Size(85, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "重新连接延迟";
             // 
@@ -496,7 +496,7 @@ namespace Quasar.Server.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "连接地址";
             // 
@@ -525,7 +525,7 @@ namespace Quasar.Server.Forms
             this.lblMS.AutoSize = true;
             this.lblMS.Location = new System.Drawing.Point(356, 183);
             this.lblMS.Name = "lblMS";
-            this.lblMS.Size = new System.Drawing.Size(21, 13);
+            this.lblMS.Size = new System.Drawing.Size(33, 13);
             this.lblMS.TabIndex = 11;
             this.lblMS.Text = "毫秒";
             // 
@@ -534,7 +534,7 @@ namespace Quasar.Server.Forms
             this.lblHost.AutoSize = true;
             this.lblHost.Location = new System.Drawing.Point(175, 25);
             this.lblHost.Name = "lblHost";
-            this.lblHost.Size = new System.Drawing.Size(75, 13);
+            this.lblHost.Size = new System.Drawing.Size(42, 13);
             this.lblHost.TabIndex = 0;
             this.lblHost.Text = "IP地址";
             // 
@@ -550,7 +550,7 @@ namespace Quasar.Server.Forms
             this.lblDelay.AutoSize = true;
             this.lblDelay.Location = new System.Drawing.Point(17, 182);
             this.lblDelay.Name = "lblDelay";
-            this.lblDelay.Size = new System.Drawing.Size(200, 13);
+            this.lblDelay.Size = new System.Drawing.Size(189, 13);
             this.lblDelay.TabIndex = 9;
             this.lblDelay.Text = "重新连接尝试之间的等待时间：";
             // 
@@ -559,7 +559,7 @@ namespace Quasar.Server.Forms
             this.lblPort.AutoSize = true;
             this.lblPort.Location = new System.Drawing.Point(175, 53);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(31, 13);
+            this.lblPort.Size = new System.Drawing.Size(36, 13);
             this.lblPort.TabIndex = 2;
             this.lblPort.Text = "端口:";
             // 
@@ -601,7 +601,7 @@ namespace Quasar.Server.Forms
             this.chkHideSubDirectory.AutoSize = true;
             this.chkHideSubDirectory.Location = new System.Drawing.Point(186, 185);
             this.chkHideSubDirectory.Name = "chkHideSubDirectory";
-            this.chkHideSubDirectory.Size = new System.Drawing.Size(185, 17);
+            this.chkHideSubDirectory.Size = new System.Drawing.Size(169, 17);
             this.chkHideSubDirectory.TabIndex = 37;
             this.chkHideSubDirectory.Text = "将子目录属性设置为隐藏";
             this.chkHideSubDirectory.UseVisualStyleBackColor = true;
@@ -620,7 +620,7 @@ namespace Quasar.Server.Forms
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(7, 274);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(59, 13);
             this.label10.TabIndex = 14;
             this.label10.Text = "自动启动";
             // 
@@ -638,7 +638,7 @@ namespace Quasar.Server.Forms
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 5);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 13);
+            this.label5.Size = new System.Drawing.Size(59, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "安装位置";
             // 
@@ -647,7 +647,7 @@ namespace Quasar.Server.Forms
             this.chkInstall.AutoSize = true;
             this.chkInstall.Location = new System.Drawing.Point(20, 21);
             this.chkInstall.Name = "chkInstall";
-            this.chkInstall.Size = new System.Drawing.Size(90, 17);
+            this.chkInstall.Size = new System.Drawing.Size(91, 17);
             this.chkInstall.TabIndex = 1;
             this.chkInstall.Text = "安装客户端";
             this.chkInstall.UseVisualStyleBackColor = true;
@@ -658,7 +658,7 @@ namespace Quasar.Server.Forms
             this.lblInstallName.AutoSize = true;
             this.lblInstallName.Location = new System.Drawing.Point(17, 156);
             this.lblInstallName.Name = "lblInstallName";
-            this.lblInstallName.Size = new System.Drawing.Size(73, 13);
+            this.lblInstallName.Size = new System.Drawing.Size(62, 13);
             this.lblInstallName.TabIndex = 8;
             this.lblInstallName.Text = "安装名称:";
             // 
@@ -693,7 +693,7 @@ namespace Quasar.Server.Forms
             this.lblRegistryKeyName.AutoSize = true;
             this.lblRegistryKeyName.Location = new System.Drawing.Point(17, 327);
             this.lblRegistryKeyName.Name = "lblRegistryKeyName";
-            this.lblRegistryKeyName.Size = new System.Drawing.Size(80, 13);
+            this.lblRegistryKeyName.Size = new System.Drawing.Size(88, 13);
             this.lblRegistryKeyName.TabIndex = 16;
             this.lblRegistryKeyName.Text = "定时任务名称:";
             // 
@@ -702,7 +702,7 @@ namespace Quasar.Server.Forms
             this.chkStartup.AutoSize = true;
             this.chkStartup.Location = new System.Drawing.Point(20, 298);
             this.chkStartup.Name = "chkStartup";
-            this.chkStartup.Size = new System.Drawing.Size(215, 17);
+            this.chkStartup.Size = new System.Drawing.Size(156, 17);
             this.chkStartup.TabIndex = 15;
             this.chkStartup.Text = "电脑启动时运行客户端";
             this.chkStartup.UseVisualStyleBackColor = true;
@@ -714,7 +714,7 @@ namespace Quasar.Server.Forms
             this.rbAppdata.Checked = true;
             this.rbAppdata.Location = new System.Drawing.Point(241, 45);
             this.rbAppdata.Name = "rbAppdata";
-            this.rbAppdata.Size = new System.Drawing.Size(137, 17);
+            this.rbAppdata.Size = new System.Drawing.Size(103, 17);
             this.rbAppdata.TabIndex = 3;
             this.rbAppdata.TabStop = true;
             this.rbAppdata.Text = "用户应用数据";
@@ -726,7 +726,7 @@ namespace Quasar.Server.Forms
             this.chkHide.AutoSize = true;
             this.chkHide.Location = new System.Drawing.Point(20, 185);
             this.chkHide.Name = "chkHide";
-            this.chkHide.Size = new System.Drawing.Size(168, 17);
+            this.chkHide.Size = new System.Drawing.Size(156, 17);
             this.chkHide.TabIndex = 11;
             this.chkHide.Text = "将文件属性设置为隐藏";
             this.chkHide.UseVisualStyleBackColor = true;
@@ -737,7 +737,7 @@ namespace Quasar.Server.Forms
             this.lblInstallDirectory.AutoSize = true;
             this.lblInstallDirectory.Location = new System.Drawing.Point(17, 47);
             this.lblInstallDirectory.Name = "lblInstallDirectory";
-            this.lblInstallDirectory.Size = new System.Drawing.Size(90, 13);
+            this.lblInstallDirectory.Size = new System.Drawing.Size(72, 13);
             this.lblInstallDirectory.TabIndex = 2;
             this.lblInstallDirectory.Text = "安装目录：";
             // 
@@ -746,7 +746,7 @@ namespace Quasar.Server.Forms
             this.lblInstallSubDirectory.AutoSize = true;
             this.lblInstallSubDirectory.Location = new System.Drawing.Point(17, 126);
             this.lblInstallSubDirectory.Name = "lblInstallSubDirectory";
-            this.lblInstallSubDirectory.Size = new System.Drawing.Size(109, 13);
+            this.lblInstallSubDirectory.Size = new System.Drawing.Size(75, 13);
             this.lblInstallSubDirectory.TabIndex = 6;
             this.lblInstallSubDirectory.Text = "安装子目录:";
             // 
@@ -755,7 +755,7 @@ namespace Quasar.Server.Forms
             this.lblPreviewPath.AutoSize = true;
             this.lblPreviewPath.Location = new System.Drawing.Point(17, 218);
             this.lblPreviewPath.Name = "lblPreviewPath";
-            this.lblPreviewPath.Size = new System.Drawing.Size(157, 13);
+            this.lblPreviewPath.Size = new System.Drawing.Size(98, 13);
             this.lblPreviewPath.TabIndex = 12;
             this.lblPreviewPath.Text = "安装位置预览：";
             // 
@@ -1051,7 +1051,7 @@ namespace Quasar.Server.Forms
             this.chkHideLogDirectory.AutoSize = true;
             this.chkHideLogDirectory.Location = new System.Drawing.Point(20, 72);
             this.chkHideLogDirectory.Name = "chkHideLogDirectory";
-            this.chkHideLogDirectory.Size = new System.Drawing.Size(197, 17);
+            this.chkHideLogDirectory.Size = new System.Drawing.Size(156, 17);
             this.chkHideLogDirectory.TabIndex = 7;
             this.chkHideLogDirectory.Text = "将目录属性设置为隐藏";
             this.chkHideLogDirectory.UseVisualStyleBackColor = true;
@@ -1071,7 +1071,7 @@ namespace Quasar.Server.Forms
             this.lblLogDirectory.AutoSize = true;
             this.lblLogDirectory.Location = new System.Drawing.Point(17, 47);
             this.lblLogDirectory.Name = "lblLogDirectory";
-            this.lblLogDirectory.Size = new System.Drawing.Size(110, 13);
+            this.lblLogDirectory.Size = new System.Drawing.Size(98, 13);
             this.lblLogDirectory.TabIndex = 5;
             this.lblLogDirectory.Text = "日志目录名称：";
             // 
@@ -1089,7 +1089,7 @@ namespace Quasar.Server.Forms
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(6, 5);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 13);
+            this.label14.Size = new System.Drawing.Size(33, 13);
             this.label14.TabIndex = 3;
             this.label14.Text = "监控";
             // 
@@ -1098,7 +1098,7 @@ namespace Quasar.Server.Forms
             this.chkKeylogger.AutoSize = true;
             this.chkKeylogger.Location = new System.Drawing.Point(20, 21);
             this.chkKeylogger.Name = "chkKeylogger";
-            this.chkKeylogger.Size = new System.Drawing.Size(156, 17);
+            this.chkKeylogger.Size = new System.Drawing.Size(104, 17);
             this.chkKeylogger.TabIndex = 4;
             this.chkKeylogger.Text = "启用键盘记录";
             this.chkKeylogger.UseVisualStyleBackColor = true;

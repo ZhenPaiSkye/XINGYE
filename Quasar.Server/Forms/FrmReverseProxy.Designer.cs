@@ -31,19 +31,14 @@ namespace Quasar.Server.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter1 = new Quasar.Server.Utilities.ListViewColumnSorter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReverseProxy));
             this.btnStart = new System.Windows.Forms.Button();
             this.lblLocalServerPort = new System.Windows.Forms.Label();
             this.nudServerPort = new System.Windows.Forms.NumericUpDown();
             this.tabCtrl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.killConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnStop = new System.Windows.Forms.Button();
-            this.lblProxyInfo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblLoadBalance = new System.Windows.Forms.Label();
-            this.lstConnections = new AeroListView();
+            this.lstConnections = new Quasar.Server.Controls.AeroListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -51,6 +46,12 @@ namespace Quasar.Server.Forms
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.killConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.lblProxyInfo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblLoadBalance = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudServerPort)).BeginInit();
             this.tabCtrl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -72,7 +73,7 @@ namespace Quasar.Server.Forms
             this.lblLocalServerPort.AutoSize = true;
             this.lblLocalServerPort.Location = new System.Drawing.Point(22, 17);
             this.lblLocalServerPort.Name = "lblLocalServerPort";
-            this.lblLocalServerPort.Size = new System.Drawing.Size(91, 13);
+            this.lblLocalServerPort.Size = new System.Drawing.Size(85, 13);
             this.lblLocalServerPort.TabIndex = 1;
             this.lblLocalServerPort.Text = "本地服务端口";
             // 
@@ -123,58 +124,6 @@ namespace Quasar.Server.Forms
             this.tabPage1.Text = "连接";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // contextMenuStrip
-            // 
-            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.killConnectionToolStripMenuItem});
-            this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(156, 26);
-            // 
-            // killConnectionToolStripMenuItem
-            // 
-            this.killConnectionToolStripMenuItem.Name = "killConnectionToolStripMenuItem";
-            this.killConnectionToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.killConnectionToolStripMenuItem.Text = "关闭连接";
-            this.killConnectionToolStripMenuItem.Click += new System.EventHandler(this.killConnectionToolStripMenuItem_Click);
-            // 
-            // btnStop
-            // 
-            this.btnStop.Enabled = false;
-            this.btnStop.Location = new System.Drawing.Point(363, 12);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(114, 23);
-            this.btnStop.TabIndex = 4;
-            this.btnStop.Text = "停止连接";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            // 
-            // lblProxyInfo
-            // 
-            this.lblProxyInfo.AutoSize = true;
-            this.lblProxyInfo.Location = new System.Drawing.Point(23, 51);
-            this.lblProxyInfo.Name = "lblProxyInfo";
-            this.lblProxyInfo.Size = new System.Drawing.Size(312, 13);
-            this.lblProxyInfo.TabIndex = 5;
-            this.lblProxyInfo.Text = "连接到这个 SOCKS5 代理：127.0.0.1:3128（无需用户名/密码）";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(405, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "所有的 DNS 查询都会在远程客户端执行，以减少 DNS 泄漏";
-            // 
-            // lblLoadBalance
-            // 
-            this.lblLoadBalance.AutoSize = true;
-            this.lblLoadBalance.Location = new System.Drawing.Point(23, 84);
-            this.lblLoadBalance.Name = "lblLoadBalance";
-            this.lblLoadBalance.Size = new System.Drawing.Size(105, 13);
-            this.lblLoadBalance.TabIndex = 7;
-            this.lblLoadBalance.Text = "[负载均衡信息]";
-            // 
             // lstConnections
             // 
             this.lstConnections.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -189,7 +138,12 @@ namespace Quasar.Server.Forms
             this.lstConnections.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstConnections.FullRowSelect = true;
             this.lstConnections.GridLines = true;
+            this.lstConnections.HideSelection = false;
             this.lstConnections.Location = new System.Drawing.Point(3, 3);
+            listViewColumnSorter1.NeedNumberCompare = false;
+            listViewColumnSorter1.Order = System.Windows.Forms.SortOrder.None;
+            listViewColumnSorter1.SortColumn = 0;
+            this.lstConnections.LvwColumnSorter = listViewColumnSorter1;
             this.lstConnections.Name = "lstConnections";
             this.lstConnections.Size = new System.Drawing.Size(722, 242);
             this.lstConnections.TabIndex = 0;
@@ -232,6 +186,58 @@ namespace Quasar.Server.Forms
             // 
             this.columnHeader5.Text = "代理类型";
             this.columnHeader5.Width = 90;
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.killConnectionToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip1";
+            this.contextMenuStrip.Size = new System.Drawing.Size(125, 26);
+            // 
+            // killConnectionToolStripMenuItem
+            // 
+            this.killConnectionToolStripMenuItem.Name = "killConnectionToolStripMenuItem";
+            this.killConnectionToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.killConnectionToolStripMenuItem.Text = "关闭连接";
+            this.killConnectionToolStripMenuItem.Click += new System.EventHandler(this.killConnectionToolStripMenuItem_Click);
+            // 
+            // btnStop
+            // 
+            this.btnStop.Enabled = false;
+            this.btnStop.Location = new System.Drawing.Point(363, 12);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(114, 23);
+            this.btnStop.TabIndex = 4;
+            this.btnStop.Text = "停止连接";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // lblProxyInfo
+            // 
+            this.lblProxyInfo.AutoSize = true;
+            this.lblProxyInfo.Location = new System.Drawing.Point(23, 51);
+            this.lblProxyInfo.Name = "lblProxyInfo";
+            this.lblProxyInfo.Size = new System.Drawing.Size(350, 13);
+            this.lblProxyInfo.TabIndex = 5;
+            this.lblProxyInfo.Text = "连接到这个 SOCKS5 代理：127.0.0.1:3128（无需用户名/密码）";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(336, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "所有的 DNS 查询都会在远程客户端执行，以减少 DNS 泄漏";
+            // 
+            // lblLoadBalance
+            // 
+            this.lblLoadBalance.AutoSize = true;
+            this.lblLoadBalance.Location = new System.Drawing.Point(23, 84);
+            this.lblLoadBalance.Name = "lblLoadBalance";
+            this.lblLoadBalance.Size = new System.Drawing.Size(91, 13);
+            this.lblLoadBalance.TabIndex = 7;
+            this.lblLoadBalance.Text = "[负载均衡信息]";
             // 
             // FrmReverseProxy
             // 

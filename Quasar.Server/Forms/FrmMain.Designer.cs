@@ -32,7 +32,7 @@ namespace Quasar.Server.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter2 = new Quasar.Server.Utilities.ListViewColumnSorter();
+            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter1 = new Quasar.Server.Utilities.ListViewColumnSorter();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,8 +87,8 @@ namespace Quasar.Server.Forms
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.builderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httpApiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -706,10 +706,10 @@ namespace Quasar.Server.Forms
             this.lstClients.FullRowSelect = true;
             this.lstClients.HideSelection = false;
             this.lstClients.Location = new System.Drawing.Point(3, 28);
-            listViewColumnSorter2.NeedNumberCompare = false;
-            listViewColumnSorter2.Order = System.Windows.Forms.SortOrder.None;
-            listViewColumnSorter2.SortColumn = 0;
-            this.lstClients.LvwColumnSorter = listViewColumnSorter2;
+            listViewColumnSorter1.NeedNumberCompare = false;
+            listViewColumnSorter1.Order = System.Windows.Forms.SortOrder.None;
+            listViewColumnSorter1.SortColumn = 0;
+            this.lstClients.LvwColumnSorter = listViewColumnSorter1;
             this.lstClients.Name = "lstClients";
             this.lstClients.ShowItemToolTips = true;
             this.lstClients.Size = new System.Drawing.Size(1016, 405);
@@ -809,19 +809,19 @@ namespace Quasar.Server.Forms
             this.builderToolStripMenuItem.Text = "构建";
             this.builderToolStripMenuItem.Click += new System.EventHandler(this.builderToolStripMenuItem_Click);
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
-            this.aboutToolStripMenuItem.Text = "关于";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // httpApiToolStripMenuItem
             // 
             this.httpApiToolStripMenuItem.Name = "httpApiToolStripMenuItem";
             this.httpApiToolStripMenuItem.Size = new System.Drawing.Size(66, 21);
             this.httpApiToolStripMenuItem.Text = "API 设置";
             this.httpApiToolStripMenuItem.Click += new System.EventHandler(this.httpApiToolStripMenuItem_Clike);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.aboutToolStripMenuItem.Text = "关于";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
