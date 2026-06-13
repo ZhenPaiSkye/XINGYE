@@ -44,7 +44,7 @@
             this.lblInfo.AutoSize = true;
             this.lblInfo.Location = new System.Drawing.Point(12, 53);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(130, 13);
+            this.lblInfo.Size = new System.Drawing.Size(150, 13);
             this.lblInfo.TabIndex = 3;
             this.lblInfo.Text = "（这可能需要一段时间）";
             // 
@@ -64,10 +64,9 @@
             this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.Location = new System.Drawing.Point(9, 9);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(493, 15);
+            this.lblDescription.Size = new System.Drawing.Size(436, 15);
             this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "要使用 Quasar，请创建一个新证书或从之前的版本导入现有证书" +
-    " installation.";
+            this.lblDescription.Text = "要使用 Quasar，请创建一个新证书或从之前的版本导入现有证书 installation.";
             // 
             // txtDetails
             // 
@@ -106,7 +105,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 310);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 15);
+            this.label1.Size = new System.Drawing.Size(343, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "请妥善保管此文件！丢失将导致失去所有客户端连接！";
             // 

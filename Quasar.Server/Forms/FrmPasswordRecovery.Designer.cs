@@ -31,6 +31,7 @@ namespace Quasar.Server.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter1 = new Quasar.Server.Utilities.ListViewColumnSorter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPasswordRecovery));
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.saveToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,14 +46,14 @@ namespace Quasar.Server.Forms
             this.clearSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.txtFormat = new System.Windows.Forms.TextBox();
-            this.lstPasswords = new AeroListView();
+            this.lstPasswords = new Quasar.Server.Controls.AeroListView();
             this.hIdentification = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hURL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hUser = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hPass = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.txtFormat = new System.Windows.Forms.TextBox();
             this.contextMenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -67,7 +68,7 @@ namespace Quasar.Server.Forms
             this.clearToolStripMenuItem,
             this.refreshToolStripMenuItem});
             this.contextMenuStrip.Name = "menuMain";
-            this.contextMenuStrip.Size = new System.Drawing.Size(172, 120);
+            this.contextMenuStrip.Size = new System.Drawing.Size(185, 98);
             // 
             // saveToFileToolStripMenuItem
             // 
@@ -76,20 +77,20 @@ namespace Quasar.Server.Forms
             this.saveSelectedToolStripMenuItem});
             this.saveToFileToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.save;
             this.saveToFileToolStripMenuItem.Name = "saveToFileToolStripMenuItem";
-            this.saveToFileToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.saveToFileToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.saveToFileToolStripMenuItem.Text = "Save to File";
             // 
             // saveAllToolStripMenuItem
             // 
             this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.saveAllToolStripMenuItem.Text = "All";
             this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
             // 
             // saveSelectedToolStripMenuItem
             // 
             this.saveSelectedToolStripMenuItem.Name = "saveSelectedToolStripMenuItem";
-            this.saveSelectedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveSelectedToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.saveSelectedToolStripMenuItem.Text = "Selected";
             this.saveSelectedToolStripMenuItem.Click += new System.EventHandler(this.saveSelectedToolStripMenuItem_Click);
             // 
@@ -100,27 +101,27 @@ namespace Quasar.Server.Forms
             this.copySelectedToolStripMenuItem});
             this.copyToClipboardToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.page_copy;
             this.copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
-            this.copyToClipboardToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.copyToClipboardToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.copyToClipboardToolStripMenuItem.Text = "Copy to Clipboard";
             // 
             // copyAllToolStripMenuItem
             // 
             this.copyAllToolStripMenuItem.Name = "copyAllToolStripMenuItem";
-            this.copyAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.copyAllToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.copyAllToolStripMenuItem.Text = "All";
             this.copyAllToolStripMenuItem.Click += new System.EventHandler(this.copyAllToolStripMenuItem_Click);
             // 
             // copySelectedToolStripMenuItem
             // 
             this.copySelectedToolStripMenuItem.Name = "copySelectedToolStripMenuItem";
-            this.copySelectedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.copySelectedToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.copySelectedToolStripMenuItem.Text = "Selected";
             this.copySelectedToolStripMenuItem.Click += new System.EventHandler(this.copySelectedToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
             // 
             // clearToolStripMenuItem
             // 
@@ -129,20 +130,20 @@ namespace Quasar.Server.Forms
             this.clearSelectedToolStripMenuItem});
             this.clearToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.delete;
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             // 
             // clearAllToolStripMenuItem
             // 
             this.clearAllToolStripMenuItem.Name = "clearAllToolStripMenuItem";
-            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearAllToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.clearAllToolStripMenuItem.Text = "All";
             this.clearAllToolStripMenuItem.Click += new System.EventHandler(this.clearAllToolStripMenuItem_Click);
             // 
             // clearSelectedToolStripMenuItem
             // 
             this.clearSelectedToolStripMenuItem.Name = "clearSelectedToolStripMenuItem";
-            this.clearSelectedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearSelectedToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.clearSelectedToolStripMenuItem.Text = "Selected";
             this.clearSelectedToolStripMenuItem.Click += new System.EventHandler(this.clearSelectedToolStripMenuItem_Click);
             // 
@@ -150,7 +151,7 @@ namespace Quasar.Server.Forms
             // 
             this.refreshToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
@@ -166,6 +167,50 @@ namespace Quasar.Server.Forms
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Recovered Accounts";
+            // 
+            // lstPasswords
+            // 
+            this.lstPasswords.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstPasswords.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.hIdentification,
+            this.hURL,
+            this.hUser,
+            this.hPass});
+            this.lstPasswords.ContextMenuStrip = this.contextMenuStrip;
+            this.lstPasswords.FullRowSelect = true;
+            this.lstPasswords.HideSelection = false;
+            this.lstPasswords.Location = new System.Drawing.Point(6, 19);
+            listViewColumnSorter1.NeedNumberCompare = false;
+            listViewColumnSorter1.Order = System.Windows.Forms.SortOrder.None;
+            listViewColumnSorter1.SortColumn = 0;
+            this.lstPasswords.LvwColumnSorter = listViewColumnSorter1;
+            this.lstPasswords.Name = "lstPasswords";
+            this.lstPasswords.Size = new System.Drawing.Size(537, 300);
+            this.lstPasswords.TabIndex = 0;
+            this.lstPasswords.UseCompatibleStateImageBehavior = false;
+            this.lstPasswords.View = System.Windows.Forms.View.Details;
+            // 
+            // hIdentification
+            // 
+            this.hIdentification.Text = "Identification";
+            this.hIdentification.Width = 107;
+            // 
+            // hURL
+            // 
+            this.hURL.Text = "URL / Location";
+            this.hURL.Width = 151;
+            // 
+            // hUser
+            // 
+            this.hUser.Text = "Username";
+            this.hUser.Width = 142;
+            // 
+            // hPass
+            // 
+            this.hPass.Text = "Password";
+            this.hPass.Width = 130;
             // 
             // groupBox2
             // 
@@ -202,46 +247,6 @@ namespace Quasar.Server.Forms
             this.txtFormat.TabIndex = 0;
             this.txtFormat.Text = "APP - URL - USER:PASS";
             this.txtFormat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lstPasswords
-            // 
-            this.lstPasswords.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstPasswords.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.hIdentification,
-            this.hURL,
-            this.hUser,
-            this.hPass});
-            this.lstPasswords.ContextMenuStrip = this.contextMenuStrip;
-            this.lstPasswords.FullRowSelect = true;
-            this.lstPasswords.HideSelection = false;
-            this.lstPasswords.Location = new System.Drawing.Point(6, 19);
-            this.lstPasswords.Name = "lstPasswords";
-            this.lstPasswords.Size = new System.Drawing.Size(537, 300);
-            this.lstPasswords.TabIndex = 0;
-            this.lstPasswords.UseCompatibleStateImageBehavior = false;
-            this.lstPasswords.View = System.Windows.Forms.View.Details;
-            // 
-            // hIdentification
-            // 
-            this.hIdentification.Text = "Identification";
-            this.hIdentification.Width = 107;
-            // 
-            // hURL
-            // 
-            this.hURL.Text = "URL / Location";
-            this.hURL.Width = 151;
-            // 
-            // hUser
-            // 
-            this.hUser.Text = "Username";
-            this.hUser.Width = 142;
-            // 
-            // hPass
-            // 
-            this.hPass.Text = "Password";
-            this.hPass.Width = 130;
             // 
             // FrmPasswordRecovery
             // 

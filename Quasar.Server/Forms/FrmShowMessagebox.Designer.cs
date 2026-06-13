@@ -74,7 +74,7 @@
             this.lblMsgIcon.AutoSize = true;
             this.lblMsgIcon.Location = new System.Drawing.Point(42, 110);
             this.lblMsgIcon.Name = "lblMsgIcon";
-            this.lblMsgIcon.Size = new System.Drawing.Size(99, 13);
+            this.lblMsgIcon.Size = new System.Drawing.Size(75, 13);
             this.lblMsgIcon.TabIndex = 7;
             this.lblMsgIcon.Text = "消息框图标:";
             // 
@@ -92,7 +92,7 @@
             this.lblMsgButtons.AutoSize = true;
             this.lblMsgButtons.Location = new System.Drawing.Point(23, 83);
             this.lblMsgButtons.Name = "lblMsgButtons";
-            this.lblMsgButtons.Size = new System.Drawing.Size(118, 13);
+            this.lblMsgButtons.Size = new System.Drawing.Size(85, 13);
             this.lblMsgButtons.TabIndex = 5;
             this.lblMsgButtons.Text = "消息框按钮：";
             // 
@@ -119,7 +119,7 @@
             this.lblText.AutoSize = true;
             this.lblText.Location = new System.Drawing.Point(24, 52);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(30, 13);
+            this.lblText.Size = new System.Drawing.Size(36, 13);
             this.lblText.TabIndex = 3;
             this.lblText.Text = "文本:";
             // 
@@ -128,7 +128,7 @@
             this.lblCaption.AutoSize = true;
             this.lblCaption.Location = new System.Drawing.Point(6, 24);
             this.lblCaption.Name = "lblCaption";
-            this.lblCaption.Size = new System.Drawing.Size(51, 13);
+            this.lblCaption.Size = new System.Drawing.Size(36, 13);
             this.lblCaption.TabIndex = 1;
             this.lblCaption.Text = "字幕:";
             // 

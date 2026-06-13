@@ -31,11 +31,12 @@ namespace Quasar.Server.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter1 = new Quasar.Server.Utilities.ListViewColumnSorter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConnections));
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lstConnections = new AeroListView();
+            this.lstConnections = new Quasar.Server.Controls.AeroListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -51,13 +52,13 @@ namespace Quasar.Server.Forms
             this.refreshToolStripMenuItem,
             this.closeConnectionToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(169, 48);
+            this.contextMenuStrip.Size = new System.Drawing.Size(178, 48);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
@@ -65,7 +66,7 @@ namespace Quasar.Server.Forms
             // 
             this.closeConnectionToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.uac_shield;
             this.closeConnectionToolStripMenuItem.Name = "closeConnectionToolStripMenuItem";
-            this.closeConnectionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.closeConnectionToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.closeConnectionToolStripMenuItem.Text = "Close Connection";
             this.closeConnectionToolStripMenuItem.Click += new System.EventHandler(this.closeConnectionToolStripMenuItem_Click);
             // 
@@ -81,7 +82,12 @@ namespace Quasar.Server.Forms
             this.lstConnections.ContextMenuStrip = this.contextMenuStrip;
             this.lstConnections.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstConnections.FullRowSelect = true;
+            this.lstConnections.HideSelection = false;
             this.lstConnections.Location = new System.Drawing.Point(0, 0);
+            listViewColumnSorter1.NeedNumberCompare = false;
+            listViewColumnSorter1.Order = System.Windows.Forms.SortOrder.None;
+            listViewColumnSorter1.SortColumn = 0;
+            this.lstConnections.LvwColumnSorter = listViewColumnSorter1;
             this.lstConnections.Name = "lstConnections";
             this.lstConnections.Size = new System.Drawing.Size(703, 421);
             this.lstConnections.TabIndex = 0;
