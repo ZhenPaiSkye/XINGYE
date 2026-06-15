@@ -89,6 +89,7 @@ namespace Quasar.Server.Forms
             this.builderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httpApiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -772,11 +773,12 @@ namespace Quasar.Server.Forms
             this.fIleToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.builderToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.httpApiToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(261, 25);
+            this.menuStrip.Size = new System.Drawing.Size(277, 25);
             this.menuStrip.TabIndex = 2;
             // 
             // fIleToolStripMenuItem
@@ -812,8 +814,8 @@ namespace Quasar.Server.Forms
             // httpApiToolStripMenuItem
             // 
             this.httpApiToolStripMenuItem.Name = "httpApiToolStripMenuItem";
-            this.httpApiToolStripMenuItem.Size = new System.Drawing.Size(66, 21);
-            this.httpApiToolStripMenuItem.Text = "API 设置";
+            this.httpApiToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.httpApiToolStripMenuItem.Text = "语言";
             this.httpApiToolStripMenuItem.Click += new System.EventHandler(this.httpApiToolStripMenuItem_Clike);
             // 
             // aboutToolStripMenuItem
@@ -822,6 +824,13 @@ namespace Quasar.Server.Forms
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
             this.aboutToolStripMenuItem.Text = "关于";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 21);
+            this.toolStripMenuItem1.Text = "API";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // FrmMain
             // 
@@ -907,6 +916,7 @@ namespace Quasar.Server.Forms
         private System.Windows.Forms.ToolStripMenuItem webFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem elevateClientPermissionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem remoteDesktopToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

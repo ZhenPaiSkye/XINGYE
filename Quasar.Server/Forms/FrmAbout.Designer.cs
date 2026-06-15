@@ -43,106 +43,68 @@
             // 
             // picIcon
             // 
-            this.picIcon.Image = global::Quasar.Server.Properties.Resources.Quasar_Server;
-            this.picIcon.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.picIcon, "picIcon");
+            this.picIcon.Image = global::Quasar.Server.Properties.Resources.XINGYE;
             this.picIcon.Name = "picIcon";
-            this.picIcon.Size = new System.Drawing.Size(64, 64);
-            this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picIcon.TabIndex = 0;
             this.picIcon.TabStop = false;
+            this.picIcon.Click += new System.EventHandler(this.picIcon_Click);
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(82, 7);
+            resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(79, 30);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Quasar";
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // lblVersion
             // 
-            this.lblVersion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.Location = new System.Drawing.Point(438, 41);
+            resources.ApplyResources(this.lblVersion, "lblVersion");
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(75, 13);
-            this.lblVersion.TabIndex = 2;
-            this.lblVersion.Text = "%VERSION%";
-            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnOkay
             // 
+            resources.ApplyResources(this.btnOkay, "btnOkay");
             this.btnOkay.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnOkay.Location = new System.Drawing.Point(438, 370);
             this.btnOkay.Name = "btnOkay";
-            this.btnOkay.Size = new System.Drawing.Size(75, 23);
-            this.btnOkay.TabIndex = 7;
-            this.btnOkay.Text = "&好的";
             this.btnOkay.UseVisualStyleBackColor = true;
             this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
             // rtxtContent
             // 
-            this.rtxtContent.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtContent.Location = new System.Drawing.Point(15, 112);
+            resources.ApplyResources(this.rtxtContent, "rtxtContent");
             this.rtxtContent.Name = "rtxtContent";
             this.rtxtContent.ReadOnly = true;
-            this.rtxtContent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rtxtContent.Size = new System.Drawing.Size(498, 252);
-            this.rtxtContent.TabIndex = 6;
-            this.rtxtContent.Text = "";
             this.rtxtContent.TextChanged += new System.EventHandler(this.rtxtContent_TextChanged);
             // 
             // lblLicense
             // 
-            this.lblLicense.AutoSize = true;
-            this.lblLicense.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLicense.Location = new System.Drawing.Point(12, 94);
+            resources.ApplyResources(this.lblLicense, "lblLicense");
             this.lblLicense.Name = "lblLicense";
-            this.lblLicense.Size = new System.Drawing.Size(46, 15);
-            this.lblLicense.TabIndex = 5;
-            this.lblLicense.Text = "许可证";
             // 
             // lnkCredits
             // 
-            this.lnkCredits.AutoSize = true;
-            this.lnkCredits.Location = new System.Drawing.Point(415, 83);
+            resources.ApplyResources(this.lnkCredits, "lnkCredits");
             this.lnkCredits.Name = "lnkCredits";
-            this.lnkCredits.Size = new System.Drawing.Size(97, 13);
-            this.lnkCredits.TabIndex = 4;
             this.lnkCredits.TabStop = true;
-            this.lnkCredits.Text = "3rd-party licenses";
             this.lnkCredits.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCredits_LinkClicked);
             // 
             // lnkGithubPage
             // 
-            this.lnkGithubPage.AutoSize = true;
-            this.lnkGithubPage.Location = new System.Drawing.Point(441, 61);
+            resources.ApplyResources(this.lnkGithubPage, "lnkGithubPage");
             this.lnkGithubPage.Name = "lnkGithubPage";
-            this.lnkGithubPage.Size = new System.Drawing.Size(73, 13);
-            this.lnkGithubPage.TabIndex = 3;
             this.lnkGithubPage.TabStop = true;
-            this.lnkGithubPage.Text = "GitHub page";
             this.lnkGithubPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithubPage_LinkClicked);
             // 
             // lblSubTitle
             // 
-            this.lblSubTitle.AutoSize = true;
-            this.lblSubTitle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTitle.Location = new System.Drawing.Point(84, 37);
+            resources.ApplyResources(this.lblSubTitle, "lblSubTitle");
             this.lblSubTitle.Name = "lblSubTitle";
-            this.lblSubTitle.Size = new System.Drawing.Size(104, 17);
-            this.lblSubTitle.TabIndex = 1;
-            this.lblSubTitle.Text = "远程管理工具";
             // 
             // FrmAbout
             // 
             this.AcceptButton = this.btnOkay;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.btnOkay;
-            this.ClientSize = new System.Drawing.Size(525, 405);
             this.Controls.Add(this.lblSubTitle);
             this.Controls.Add(this.lnkGithubPage);
             this.Controls.Add(this.lnkCredits);
@@ -152,14 +114,10 @@
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picIcon);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAbout";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quasar - 关于";
             this.Load += new System.EventHandler(this.FrmAbout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.ResumeLayout(false);
