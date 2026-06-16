@@ -789,5 +789,18 @@ namespace Quasar.Server.Forms
         {
 
         }
+
+        private void PluginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var frm = new FrmMenu())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }

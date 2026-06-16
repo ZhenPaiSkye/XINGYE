@@ -32,7 +32,7 @@ namespace Quasar.Server.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter1 = new Quasar.Server.Utilities.ListViewColumnSorter();
+            Quasar.Server.Utilities.ListViewColumnSorter listViewColumnSorter2 = new Quasar.Server.Utilities.ListViewColumnSorter();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,6 +89,8 @@ namespace Quasar.Server.Forms
             this.builderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httpApiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PluginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -706,10 +708,10 @@ namespace Quasar.Server.Forms
             this.lstClients.FullRowSelect = true;
             this.lstClients.HideSelection = false;
             this.lstClients.Location = new System.Drawing.Point(3, 28);
-            listViewColumnSorter1.NeedNumberCompare = false;
-            listViewColumnSorter1.Order = System.Windows.Forms.SortOrder.None;
-            listViewColumnSorter1.SortColumn = 0;
-            this.lstClients.LvwColumnSorter = listViewColumnSorter1;
+            listViewColumnSorter2.NeedNumberCompare = false;
+            listViewColumnSorter2.Order = System.Windows.Forms.SortOrder.None;
+            listViewColumnSorter2.SortColumn = 0;
+            this.lstClients.LvwColumnSorter = listViewColumnSorter2;
             this.lstClients.Name = "lstClients";
             this.lstClients.ShowItemToolTips = true;
             this.lstClients.Size = new System.Drawing.Size(1016, 405);
@@ -773,10 +775,12 @@ namespace Quasar.Server.Forms
             this.settingsToolStripMenuItem,
             this.builderToolStripMenuItem,
             this.httpApiToolStripMenuItem,
+            this.PluginToolStripMenuItem,
+            this.menuToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(261, 25);
+            this.menuStrip.Size = new System.Drawing.Size(471, 25);
             this.menuStrip.TabIndex = 2;
             // 
             // fIleToolStripMenuItem
@@ -822,6 +826,20 @@ namespace Quasar.Server.Forms
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
             this.aboutToolStripMenuItem.Text = "关于";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // PluginToolStripMenuItem
+            // 
+            this.PluginToolStripMenuItem.Name = "PluginToolStripMenuItem";
+            this.PluginToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.PluginToolStripMenuItem.Text = "插件";
+            this.PluginToolStripMenuItem.Click += new System.EventHandler(this.PluginToolStripMenuItem_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.menuToolStripMenuItem.Text = "菜单";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -907,6 +925,8 @@ namespace Quasar.Server.Forms
         private System.Windows.Forms.ToolStripMenuItem webFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem elevateClientPermissionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem remoteDesktopToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem PluginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
     }
 }
 

@@ -317,8 +317,8 @@
       <Version>2.1.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Plugin\" />
-  </ItemGroup>
+	<Target Name="CreatePluginsFolder" BeforeTargets="Build">
+		<MakeDir Directories="$(OutputPath)Plugins" />
+	</Target>
   <PropertyGroup />
 </Project>

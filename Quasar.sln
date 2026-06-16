@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30104.148
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quasar.Server", "Quasar.Server\Quasar.Server.csproj", "{14CA405B-8BAC-48AB-9FBA-8FB5DF88FD0D}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quasar.Common", "Quasar.Common\Quasar.Common.csproj", "{C7C363BA-E5B6-4E18-9224-39BC8DA73172}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quasar.Common.Tests", "Quasar.Common.Tests\Quasar.Common.Tests.csproj", "{32A2A734-7429-47E6-A362-E344A19C0D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplePlugin", "ExamplePlugin\ExamplePlugin.csproj", "{A57022D9-418F-06FD-CC5D-46FDD2F2126E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{32A2A734-7429-47E6-A362-E344A19C0D85}.Debug|AnyCPU.Build.0 = Debug|Any CPU
 		{32A2A734-7429-47E6-A362-E344A19C0D85}.Release|AnyCPU.ActiveCfg = Release|Any CPU
 		{32A2A734-7429-47E6-A362-E344A19C0D85}.Release|AnyCPU.Build.0 = Release|Any CPU
+		{A57022D9-418F-06FD-CC5D-46FDD2F2126E}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{A57022D9-418F-06FD-CC5D-46FDD2F2126E}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{A57022D9-418F-06FD-CC5D-46FDD2F2126E}.Release|AnyCPU.ActiveCfg = Release|Any CPU
+		{A57022D9-418F-06FD-CC5D-46FDD2F2126E}.Release|AnyCPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
