@@ -765,7 +765,7 @@ namespace Quasar.Server.Forms
 
         private void httpApiToolStripMenuItem_Clike(object sender,EventArgs e)
         {
-            using (var frm = new FrmHttpApi())
+            using (var frm = new FrmLanguage())
             {
                 frm.ShowDialog();
             }
@@ -788,6 +788,14 @@ namespace Quasar.Server.Forms
         private void listenToolStripStatusLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            using (var frm = new FrmHttpApi())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

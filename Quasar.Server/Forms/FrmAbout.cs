@@ -50,5 +50,15 @@ namespace Quasar.Server.Forms
         {
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picIcon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
